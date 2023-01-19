@@ -1,0 +1,144 @@
+
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+      url(../images/E-GOLF.webp);
+    width: 100%;
+    height: 640px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+    
+  }
+  
+  .hero .hero-title {
+    align-self: center;
+    position: absolute;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 8rem;
+  }
+  
+  .hero .hero-title h1 {
+    color: #fff;
+    font-size: 1.875rem;
+  
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  .hero .hero-title h2 {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  .btn-wrapper {
+    display: flex;
+  
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .hero .hero-title #enquire-btn {
+    display: flex;
+    justify-content: space-between;
+  
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0.125rem solid #af9644;
+    border-radius: 1.875rem;
+    color: #fff;
+  
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.002em;
+    line-height: 1;
+    padding: 0.75rem 3.9375rem 0.8125rem 2.0625rem;
+    text-decoration: none;
+  }
+  
+
+  
+  #enquire-btn:hover .icons-wrapper-2 {
+    margin-right: -40px;
+  }
+  
+  .hero .hero-title #enquire-btn {
+    border: 0.125rem solid #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+    margin-top: 1rem;
+    width: 130px;
+  }
+  
+
+  
+  .hero-title .icons-wrapper-2 {
+    transform: rotate(-90deg);
+    display: flex;
+    margin-right: -30px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .icons-wrapper-2 .scroll-icon-1-1,
+  .scroll-icon-2-1 {
+    margin: -4px;
+    width: 11px;
+    height: 3.1px;
+    background-color: #36331c;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  
+  .icons-wrapper-2 .scroll-icon-1-1 {
+    transform: rotate(45deg);
+    margin-right: -1px;
+  }
+  
+  .icons-wrapper-2 .scroll-icon-2-1 {
+    transform: rotate(-45deg);
+  }
+  
+  .hero .scroll-wrapper {
+    align-self: flex-end;
+    height: 4.5rem;
+    background-color: rgba(175, 150, 68, 0.3);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hero .scroll-wrapper .icons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #d7d7d2;
+  }
+  
+  .hero .scroll-wrapper .icons-wrapper .scroll-icon-1,
+  .scroll-icon-2 {
+    margin: -4px;
+    width: 18px;
+    height: 5px;
+    background-color: #36331c;
+    border-radius: 2px;
+  }
+  
+  .hero .scroll-wrapper .icons-wrapper .scroll-icon-1 {
+    transform: rotate(45deg);
+  }
+  
+  .hero .scroll-wrapper .icons-wrapper .scroll-icon-2 {
+    transform: rotate(-45deg);
+  }
