@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
 body {
@@ -6,210 +5,181 @@ body {
   margin: 0;
 }
 
-  
-  .contact-num{
-    display:none;
-     
-    }
-    
-  
-  
-  
+.contact-num {
+  display: none;
+}
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 44;
+  height: 6rem;
+  transition: 0.5s;
+}
+
+header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  z-index: 10;
+  transition: 0.5s;
+}
+
+#logo {
+  width: 200px;
+  height: auto;
+}
+
+/*hamburger container*/
+.hamburger {
+  cursor: pointer;
+  margin-right: 8%;
+  text-align: center;
+}
+
+.hamburger p {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+/*hamburger bars created with css*/
+.hamburger .bar-1 {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 8px;
+  transition: 0.2s ease;
+  border-radius: 2px;
+}
+
+nav {
+  display: flex;
+
+  position: absolute;
+  top: 6rem;
+  left: -20rem;
+
+  width: 20rem;
+  height: 100vh;
+
+  z-index: 10;
+}
+
+nav .menu {
+  display: block;
+
+  list-style-type: none;
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav .menu li {
+  border-bottom: 1px solid rgb(218, 217, 217);
+}
+
+nav .menu li a {
+  display: flex;
+  color: #2b3746;
+  cursor: pointer;
+  font-weight: 500;
+  justify-content: left;
+  font-weight: bold;
+  height: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  color: #3c2157;
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+nav .menu li a:hover {
+  color: #af9644;
+}
+
+.inverted {
+  background-color: #232728;
+  box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 1030px) {
   .header-wrapper {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 44;
-    height: 6rem;
-    transition: 0.5s;
-  }
-  
-  header {
-    width: 100%;
-    height: 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%;
-    z-index: 10;
-    transition: 0.5s;
-    
-  
-  }
-  
-  #logo {
-    width: 200px;
-    height: auto;
-  }
-  
-  /*hamburger container*/
-  .hamburger {
-    cursor: pointer;
-    margin-right: 8%;
-    text-align: center;
-  }
-  
-  .hamburger p {
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
-  }
-  /*hamburger bars created with css*/
-  .hamburger .bar-1 {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 8px;
-    transition: 0.2s ease;
-    border-radius: 2px;
-  }
-  
-  nav {
-    
-    display:flex;
-    
-    position: absolute;
-    top: 6rem;
-    left: -20rem;
-   
-  
-    width: 20rem;
-    height: 100vh;
-    
-    z-index: 10;
-  }
-  
-  nav .menu {
-    display: block;
-  
-    list-style-type: none;
-    width: 100%;
-    background-color: #f0f0f0;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  nav .menu li {
-    border-bottom: 1px solid rgb(218, 217, 217);
-  }
-  
-  nav .menu li a {
-    display: flex;
-    color: #2b3746;
-    cursor: pointer;
-    font-weight: 500;
-    justify-content: left;
-    font-weight: bold;
-    height: 100%;
-    font-size: 15px;
-    text-decoration: none;
-    color: #3c2157;
-    padding: 1rem;
-    transition: 0.3s;
-  }
-  
-  nav .menu li a:hover {
-    color: #af9644;
-  }
-  
-  .inverted {
-    background-color: #232728;
-    box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
+    height: 7rem;
   }
 
-  @media screen and (min-width: 1030px) {
- 
-    .header-wrapper {
-  
-      height:7rem
-    }
-  
-  
-    header {
-      
-      height: 7rem;
-      box-shadow: 0 6px 12px rgb(0 0 0 / 5%);
-      border-bottom: 1px solid #e6e6e6;
-      padding-left: 3%;
-      padding-right: 3%;
-    
-     
-    }
-    nav {
-  
-  
-      position: absolute;
-    
-      
-      top:50%; 
-      left:53%; 
-      transform:translate(-50%, -50%); 
-      width:50%;
-     
-      height:7rem;
-      display:flex;
-      align-items: center;
-      
-    }
-    nav .menu {
-      display:flex;
-    justify-content:center ;
-      align-items: center;
-      height:7rem;
-      background-color:inherit;
-      padding:0;
-      margin:0
-      
-    
-    }
-    
-    nav .menu li {
-      border:none;
-      
-      
-    }
-    
-    nav .menu li a {
-   
-      
-      cursor: pointer;
-      font-weight: 500;
-     
-      font-weight: bold;
-    
-      font-size: 16px;
-      text-decoration: none;
-      color: #fff;
-    
-   
-    }
-    
-    nav .menu li a:hover {
-     
-      color:white;
-      text-decoration: underline;
-    }
-    
-    #logo {
-      width: 240px;
-      height: auto;
-    }
-  
-    .hamburger {
-      display: none;
-    }
-  
-  .contact-num{
-  display:block;
-    margin-right:8%;
-    color:#fff;
-    font-size: 16px;
-    font-weight:bold
+  header {
+    height: 7rem;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 5%);
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 3%;
+    padding-right: 3%;
   }
-  
+  nav {
+    position: absolute;
+
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+
+    height: 7rem;
+    display: flex;
+    align-items: center;
+  }
+  nav .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav .menu li {
+    border: none;
+  }
+
+  nav .menu li a {
+    cursor: pointer;
+    font-weight: 500;
+
+    font-weight: bold;
+
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  nav .menu li a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  #logo {
+    width: 240px;
+    height: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .contact-num {
+    display: block;
+    margin-right: 8%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
 }

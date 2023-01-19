@@ -1,438 +1,397 @@
-
-
-
 .hero {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-      url(../images/E-GOLF.webp);
-    width: 100%;
-    height: 640px;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    
-    
-  }
-  
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(../images/E-GOLF.webp);
+  width: 100%;
+  height: 640px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .hero-title {
+  align-self: center;
+  position: absolute;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+.hero .hero-title h1 {
+  color: #fff;
+  font-size: 1.875rem;
+
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.hero .hero-title h2 {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.btn-wrapper {
+  display: flex;
+
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hero .hero-title #enquire-btn {
+  display: flex;
+  justify-content: space-between;
+
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0.125rem solid #af9644;
+  border-radius: 1.875rem;
+  color: #fff;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.002em;
+  line-height: 1;
+  padding: 0.75rem 3.9375rem 0.8125rem 2.0625rem;
+  text-decoration: none;
+}
+
+#enquire-btn:hover .icons-wrapper-2 {
+  margin-right: -40px;
+}
+
+.hero .hero-title #enquire-btn {
+  border: 0.125rem solid #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+  margin-top: 1rem;
+  width: 130px;
+}
+
+.hero-title .icons-wrapper-2 {
+  transform: rotate(-90deg);
+  display: flex;
+  margin-right: -30px;
+  transition: 0.3s ease-in-out;
+}
+
+.icons-wrapper-2 .scroll-icon-1-1,
+.scroll-icon-2-1 {
+  margin: -4px;
+  width: 11px;
+  height: 3.1px;
+  background-color: #36331c;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.icons-wrapper-2 .scroll-icon-1-1 {
+  transform: rotate(45deg);
+  margin-right: -1px;
+}
+
+.icons-wrapper-2 .scroll-icon-2-1 {
+  transform: rotate(-45deg);
+}
+
+.hero .scroll-wrapper {
+  align-self: flex-end;
+  height: 4.5rem;
+  background-color: rgba(175, 150, 68, 0.3);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero .scroll-wrapper .icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #d7d7d2;
+}
+
+.hero .scroll-wrapper .icons-wrapper .scroll-icon-1,
+.scroll-icon-2 {
+  margin: -4px;
+  width: 18px;
+  height: 5px;
+  background-color: #36331c;
+  border-radius: 2px;
+}
+
+.hero .scroll-wrapper .icons-wrapper .scroll-icon-1 {
+  transform: rotate(45deg);
+}
+
+.hero .scroll-wrapper .icons-wrapper .scroll-icon-2 {
+  transform: rotate(-45deg);
+}
+
+.grid-container-1-2 {
+  width: 95%;
+  padding-bottom: 40px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  gap: 20px;
+  text-align: left;
+  display: grid;
+  margin: 60px auto auto;
+}
+
+.grid-container-1-2 p {
+  margin-left: 0;
+  line-height: 1.5rem;
+}
+
+.grid-container-1-2 .grid-items {
+  background-color: #fff;
+  transition: 0.3s;
+  position: relative;
+  width: 100%;
+}
+
+.grid-container-1-2 .grid-items .internal-border {
+  position: absolute;
+  top: 5%;
+  left: 3.2%;
+  width: 83%;
+  height: 83%;
+  border: 1px solid #fff;
+}
+
+.grid-container-1-2 .grid-items #img-1 {
+  width: 90%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.grid-container-1-2 .grid-items #img-2 {
+  position: absolute;
+  right: 5%;
+  bottom: -12px;
+  width: 50%;
+  height: auto;
+  border: 2px solid rgb(207, 207, 207);
+}
+
+.grid-container-1-2 .golf-charger-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+}
+
+.grid-container-1-2 .golf-charger-desc {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+
+.icons-container .icon-wrap img {
+  width: 45px;
+  height: auto;
+}
+
+.icons-container .icon-wrap {
+  width: 100%;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.icons-container .icon-wrap span {
+  width: 30%;
+  margin-left: 10%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#meet-the-team-btn {
+  display: flex;
+  justify-content: space-between;
+  border: 0.125rem solid black;
+  border-radius: 1.875rem;
+
+  width: 160px;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.002em;
+  line-height: 1;
+  color: black;
+  padding: 0.75rem 3.9375rem 0.8125rem 2.0625rem;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+#meet-the-team-btn .icons-wrapper-3 {
+  display: flex;
+  transform: rotate(-90deg);
+  margin-right: -30px;
+  transition: 0.3s ease-in-out;
+}
+
+#meet-the-team-btn:hover .icons-wrapper-3 {
+  margin-right: -40px;
+}
+
+#meet-the-team-btn .icons-wrapper-3 .scroll-icon-1-2,
+.scroll-icon-2-2 {
+  margin: -4px;
+  width: 11px;
+  height: 3.1px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+#meet-the-team-btn .icons-wrapper-3 .scroll-icon-1-2 {
+  transform: rotate(45deg);
+  margin-right: -1px;
+}
+
+#meet-the-team-btn .icons-wrapper-3 .scroll-icon-2-2 {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 370px) {
+}
+
+@media screen and (min-width: 550px) {
   .hero .hero-title {
-    align-self: center;
-    position: absolute;
+    top: 1rem;
+    width: 70%;
+    height: auto;
+  }
+
+  .hero .hero-title h1 {
+    font-size: 3.125rem;
+  }
+
+  .hero .hero-title h2 {
+    font-size: 1.375rem;
+  }
+
+  .grid-container-1-2 .golf-charger-images {
+    width: 500px;
+    height: auto;
+    margin: auto;
+  }
+
+  .grid-container-1-2 .grid-items #img-2 {
+    width: 45%;
+    height: auto;
+  }
+
+  .grid-container-1-2 .golf-charger-content {
     width: 90%;
     height: auto;
     margin: auto;
-    margin-top: 8rem;
   }
-  
-  .hero .hero-title h1 {
-    color: #fff;
-    font-size: 1.875rem;
-  
-    font-weight: 300;
-    line-height: 1.2;
-  }
-  
-  .hero .hero-title h2 {
-    color: #fff;
-    font-size: 1.125rem;
-    font-weight: 500;
-  }
-  
-  .btn-wrapper {
-    display: flex;
-  
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  .hero .hero-title #enquire-btn {
-    display: flex;
-    justify-content: space-between;
-  
-    cursor: pointer;
-    transition: 0.3s;
-    border: 0.125rem solid #af9644;
-    border-radius: 1.875rem;
-    color: #fff;
-  
-    font-size: 1.25rem;
-    font-weight: 500;
-    letter-spacing: 0.002em;
-    line-height: 1;
-    padding: 0.75rem 3.9375rem 0.8125rem 2.0625rem;
-    text-decoration: none;
-  }
-  
-
-  
-  #enquire-btn:hover .icons-wrapper-2 {
-    margin-right: -40px;
-  }
-  
-  .hero .hero-title #enquire-btn {
-    border: 0.125rem solid #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
-    margin-top: 1rem;
-    width: 130px;
-  }
-  
-
-  
-  .hero-title .icons-wrapper-2 {
-    transform: rotate(-90deg);
-    display: flex;
-    margin-right: -30px;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .icons-wrapper-2 .scroll-icon-1-1,
-  .scroll-icon-2-1 {
-    margin: -4px;
-    width: 11px;
-    height: 3.1px;
-    background-color: #36331c;
-    border-radius: 2px;
-    background-color: #fff;
-  }
-  
-  .icons-wrapper-2 .scroll-icon-1-1 {
-    transform: rotate(45deg);
-    margin-right: -1px;
-  }
-  
-  .icons-wrapper-2 .scroll-icon-2-1 {
-    transform: rotate(-45deg);
-  }
-  
-  .hero .scroll-wrapper {
-    align-self: flex-end;
-    height: 4.5rem;
-    background-color: rgba(175, 150, 68, 0.3);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .hero .scroll-wrapper .icons-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: #d7d7d2;
-  }
-  
-  .hero .scroll-wrapper .icons-wrapper .scroll-icon-1,
-  .scroll-icon-2 {
-    margin: -4px;
-    width: 18px;
-    height: 5px;
-    background-color: #36331c;
-    border-radius: 2px;
-  }
-  
-  .hero .scroll-wrapper .icons-wrapper .scroll-icon-1 {
-    transform: rotate(45deg);
-  }
-  
-  .hero .scroll-wrapper .icons-wrapper .scroll-icon-2 {
-    transform: rotate(-45deg);
-  }
-
-
-
-  .grid-container-1-2 {
-    width: 95%;
-    padding-bottom: 40px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    row-gap: 20px;
-    gap: 20px;
-    text-align: left;
-    display: grid;
-    margin: 60px auto auto;
-  }
-  
-  .grid-container-1-2 p {
-    margin-left: 0;
-    line-height: 1.5rem;
-  }
-  
-  .grid-container-1-2 .grid-items {
-    background-color: #fff;
-    transition: 0.3s;
-    position: relative;
-    width: 100%;
-  }
-  
-  .grid-container-1-2 .grid-items .internal-border {
-    position: absolute;
-    top: 5%;
-    left: 3.2%;
-    width: 83%;
-    height: 83%;
-    border: 1px solid #fff;
-  }
-  
-  .grid-container-1-2 .grid-items #img-1 {
-    width: 90%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  
-  .grid-container-1-2 .grid-items #img-2 {
-    position: absolute;
-    right: 5%;
-    bottom: -12px;
-    width: 50%;
-    height: auto;
-    border: 2px solid rgb(207, 207, 207);
-  }
-  
-  .grid-container-1-2 .golf-charger-title {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: rgb(51, 51, 51);
-  }
-  
-  .grid-container-1-2 .golf-charger-desc {
-    font-size: 1rem;
-    font-weight: 600;
-  }
-  
-  .icons-container {
-    display: flex;
-    flex-wrap: wrap;
-  
-    align-items: center;
-  }
-  
-  .icons-container .icon-wrap img {
-    width: 45px;
-    height: auto;
-  }
-  
-  .icons-container .icon-wrap {
-    width: 100%;
-    margin: 5%;
-    display: flex;
-    align-items: center;
-  }
-  
-  .icons-container .icon-wrap span {
-    width: 30%;
-    margin-left: 10%;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-  
-
- 
-
-  #meet-the-team-btn {
-    display: flex;
-    justify-content: space-between;
-    border: 0.125rem solid black;
-    border-radius: 1.875rem;
-  
-    width: 160px;
-    font-size: 1.25rem;
-    font-weight: 900;
-    letter-spacing: 0.002em;
-    line-height: 1;
-    color: black;
-    padding: 0.75rem 3.9375rem 0.8125rem 2.0625rem;
-    text-decoration: none;
-    margin-top: 20px;
-  }
-  
-  #meet-the-team-btn .icons-wrapper-3 {
-    display: flex;
-    transform: rotate(-90deg);
-    margin-right: -30px;
-    transition: 0.3s ease-in-out;
-  }
-  
-
- 
-
-  #meet-the-team-btn:hover .icons-wrapper-3 {
-    margin-right: -40px;
-  
-  }
-  
-  #meet-the-team-btn .icons-wrapper-3 .scroll-icon-1-2,
-  .scroll-icon-2-2 {
-    margin: -4px;
-    width: 11px;
-    height: 3.1px;
-    background-color: black;
-    border-radius: 2px;
-  }
-  
-  #meet-the-team-btn .icons-wrapper-3 .scroll-icon-1-2 {
-    transform: rotate(45deg);
-    margin-right: -1px;
-  }
-  
-  #meet-the-team-btn .icons-wrapper-3 .scroll-icon-2-2 {
-    transform: rotate(-45deg);
-  }
-
-
-  @media screen and (min-width: 370px) {
 }
 
-
-
-  @media screen and (min-width: 550px) {
-    .hero .hero-title {
-      top: 1rem;
-      width: 70%;
-      height: auto;
-    }
-  
-    .hero .hero-title h1 {
-      font-size: 3.125rem;
-    }
-  
-    .hero .hero-title h2 {
-      font-size: 1.375rem;
-    }
-
-    .grid-container-1-2 .golf-charger-images {
-        width: 500px;
-        height: auto;
-        margin: auto;
-      }
-    
-      .grid-container-1-2 .grid-items #img-2 {
-        width: 45%;
-        height: auto;
-      }
-    
-      .grid-container-1-2 .golf-charger-content {
-        width: 90%;
-        height: auto;
-        margin: auto;
-      }
-
-
-  }
-  
-  @media screen and (min-width: 760px) {
-    .hero .hero-title {
-      width: 500px;
-    }
-  
-    .hero .scroll-wrapper {
-      height: 7rem;
-    }
-  
-    .hero .hero-title {
-      left: 4rem;
-    }
-  
-    .btn-wrapper {
-      display: flex;
-  
-      flex-wrap: nowrap;
-      width: 100%;
-    }
-  
-    .hero .hero-title #consultation-btn {
-      margin-left: 1rem;
-    }
-
-    .icons-container {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-       
-      }
-    
-      .icons-container .icon-wrap span {
-        width: 100%;
-      }
-
-
+@media screen and (min-width: 760px) {
+  .hero .hero-title {
+    width: 500px;
   }
 
+  .hero .scroll-wrapper {
+    height: 7rem;
+  }
 
+  .hero .hero-title {
+    left: 4rem;
+  }
 
-  @media screen and (min-width: 1030px) {
+  .btn-wrapper {
+    display: flex;
+
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  
+
+  .icons-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .icons-container .icon-wrap span {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .hero {
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .grid-container-1-2 {
+    margin-top: 80px;
+    padding-bottom: 100px;
+    gap: 30px;
+    column-gap: 90px;
+  }
+
+  .icons-container .icon-wrap span {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .grid-container-1-2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+    width:90%;
+   
+  }
+  .grid-container-1-2 p {
+    font-size: 14px;
+  }
+
+  .grid-container-1-2 .golf-charger-content {
+    margin-top: 1rem;
+    width: 500px;
+  }
+
+  .grid-container-1-2 .golf-charger-images {
+    width: 500px;
+    height: auto;
+    margin: auto;
+  }
+
  
-   
-  
-    .hero {
-      width: 100%;
-      height: 700px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .grid-container-1-2 {
-        margin-top: 80px;
-        padding-bottom: 100px;
-        gap: 30px;
-        column-gap: 90px;
-       
-        
-       
-       
-      }
-    
-      .icons-container .icon-wrap span {
-        margin-right: 1rem;
-       
-      }
-
-    
 
 
+
+  .icons-container {
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
-  
 
-  @media screen and (min-width: 1180px) {
-    .grid-container-1-2 {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .grid-container-1-2 p {
-      font-size: 14px;
-    }
-
-    .grid-container-1-2 .golf-charger-content{
-margin-top:1rem;
-        width:500px
-      }
-   
-
-      .icons-container {
-        margin:0;
-        padding:0;
-        margin-top:2rem;
-        margin-bottom:2rem
-           }
-
-      .icons-container .icon-wrap{
-      margin:0;
-      padding:0;
-     
-      
-         }
-
-
-      .icons-container .icon-wrap span {
-   
-       width:140px
-      }
-
-      
-
-
+  .icons-container .icon-wrap {
+    margin: 0;
+    padding: 0;
   }
-  
+
+  .icons-container .icon-wrap span {
+    width: 140px;
+  }
+}
