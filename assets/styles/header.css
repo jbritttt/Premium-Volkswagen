@@ -84,6 +84,14 @@ nav .menu {
   padding-bottom: 20px;
 }
 
+nav .menu #enquire-link{
+ 
+  background-color: rgb(85, 85, 241);
+  border-radius: 1rem;
+}
+
+
+
 nav .menu li {
   border-bottom: 1px solid rgb(218, 217, 217);
 }

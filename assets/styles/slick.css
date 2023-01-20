@@ -24,7 +24,27 @@ and keep them centered when images grow or shrink  */
   
   }
 
+  .slick-slider-1 {
+    display: flex;
   
+    width: 100%;
+  
+    margin: auto;
+  
+   
+  
+  }
+
+  .slick-slider-1  {
+    display: flex;
+  
+    width: 100%;
+  
+    margin: auto;
+  
+   
+  
+  }
 
 
   
@@ -89,6 +109,28 @@ and keep them centered when images grow or shrink  */
     border-radius: 100%;
     height: 12px;
     width: 12px;
+    
+  }
+
+
+  .slick-slider-1 ul.slick-dots li button:before {
+    background-color: black;
+    height: 12px;
+    width: 12px;
+  
+    border-radius: 100%;
+    font-size: 0px;
+    color: rgb(58, 58, 58);
+    margin-top:20px
+  }
+  
+  .slick-slider-1 ul.slick-dots li button {
+    background-color: grey;
+    border-radius: 100%;
+    height: 12px;
+    width: 12px;
+    margin-top:20px
+    
   }
 
 
