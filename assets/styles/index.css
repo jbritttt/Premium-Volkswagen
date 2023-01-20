@@ -376,7 +376,20 @@ text-align: center;
 #team-img {
 
     width:100%;
-    margin-top:3rem
+    margin-top:2rem
+}
+
+
+.team-description{
+  width:95%;
+  margin:auto;
+  margin-top:4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+
+
+
 }
 
 
@@ -387,7 +400,7 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid black;
+  border: 1px solid rgb(75, 75, 75);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -403,23 +416,26 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-top:1rem
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #131414;;
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.form-container {
   border-radius: 5px;
   background-color:white;
   padding: 20px;
-  width: 45%;
+  width: 80%;
+  margin:auto;
+  margin-top: 3rem;
+  margin-bottom:4rem;
   
-  margin-top: 80px;
-  margin-bottom: 80px;
 }
+
 
 
 
@@ -461,13 +477,15 @@ input[type="submit"]:hover {
   .e-golf-desc{
   
     width: 80%;
-    
-   
   
-    
   
   
   }
+
+ 
+
+  
+
 
 }
 
@@ -526,6 +544,24 @@ input[type="submit"]:hover {
  
    
    
+  }
+
+  .team-description{
+    width:70%;
+ 
+  }
+
+  .form-container {
+  
+    width: 70%;
+ 
+    
+  }
+  .form-container {
+  
+    width: 50%;
+  
+    
   }
 
 }
@@ -623,5 +659,8 @@ input[type="submit"]:hover {
   
   margin-top:7rem
 }
+
+
+
 
 }
