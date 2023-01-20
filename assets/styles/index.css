@@ -145,6 +145,7 @@
   text-align: left;
   display: grid;
   margin:auto;
+  overflow:hidden
   
 
 }
@@ -221,32 +222,6 @@
 
 
 
-.icons-container {
-  display: flex;
-  flex-wrap: wrap;
-
-  align-items: center;
-}
-
-.icons-container .icon-wrap img {
-  width: 45px;
-  height: auto;
-}
-
-.icons-container .icon-wrap {
-  width: 100%;
-  margin: 5%;
-  display: flex;
-  align-items: center;
-}
-
-.icons-container .icon-wrap span {
-  width: 30%;
-  margin-left: 10%;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
 #meet-the-team-btn {
   display: flex;
   justify-content: space-between;
@@ -314,9 +289,94 @@
 
 }
 
+
+.e-golf-desc{
+  display: grid;
+  width: 95%;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding-bottom: 4rem;
+  row-gap: 20px;
+  gap: 20px;
+  text-align: left;
+  
+  margin:auto;
+
+  
+
+
+}
+
+.e-golf-desc .grid-items {
+
+ width:100%;
+ height:100%;
+ border-bottom:1px solid rgb(199, 199, 199)
+  
+}
+
+
+
+.e-golf-desc .grid-items p {
+
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+
+}
+
+
+
+.icons-container {
+  width: 95%;
+  padding-bottom: 4rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  gap: 20px;
+text-align: center;
+  display: grid;
+  margin:auto;
+  
+}
+
+
+
+.icons-container .icon-wrap {
+  
+  
+ 
+  display: flex;
+  align-items: center;
+  
+  justify-content:stretch;
+
+
+ 
+}
+
+
+.icons-container .icon-wrap img {
+  width:20%;
+  height: auto;
+  
+}
+
+.icons-container .icon-wrap span {
+
+  margin-left:3rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+
+
 #team-img {
 
-    width:100%
+    width:100%;
+    margin-top:3rem
 }
 
 
@@ -398,10 +458,16 @@ input[type="submit"]:hover {
     margin: auto;
   }
 
-  #team-img {
-
-    width:50%
-}
+  .e-golf-desc{
+  
+    width: 80%;
+    
+   
+  
+    
+  
+  
+  }
 
 }
 
@@ -435,6 +501,33 @@ input[type="submit"]:hover {
   .icons-container .icon-wrap span {
     width: 100%;
   }
+
+
+  .e-golf-desc{
+
+    
+    grid-template-columns: 1fr 1fr;
+ 
+  
+    
+  
+  
+  }
+
+  .icons-container {
+    
+    grid-template-columns: 1fr 1fr 1fr;
+ 
+  }
+
+  .icons-container .icon-wrap {
+    width: 90%;
+    margin-top:3rem
+ 
+   
+   
+  }
+
 }
 
 @media screen and (min-width: 1030px) {
@@ -485,22 +578,50 @@ input[type="submit"]:hover {
   }
 
  
+  .e-golf-desc{
 
+    
+   gap:4rem
+ 
+  
+    
+  
+  
+  }
 
 
   .icons-container {
     margin: 0;
     padding: 0;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    
+    
+    width: 80%;
+    margin:auto;
   }
 
   .icons-container .icon-wrap {
     margin: 0;
     padding: 0;
+    margin-top:3rem
   }
 
   .icons-container .icon-wrap span {
-    width: 140px;
+    width:60%;
+    margin:0;
+    font-size: 1rem;
   }
+
+
+.icons-container .icon-wrap img {
+  width:30%;
+  height: auto;
+  
+}
+
+#team-img {
+
+  
+  margin-top:7rem
+}
+
 }
