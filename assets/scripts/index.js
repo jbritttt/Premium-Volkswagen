@@ -46,3 +46,30 @@ window.onscroll = function () {
 };
 
 
+
+// intersection observer/ slide in affect on text content
+
+const cards = document.querySelectorAll('.intersect')
+
+const observer = new IntersectionObserver(entries =>{
+entries.forEach(entry =>{
+
+entry.target.classList.toggle('show', entry.isIntersecting)
+
+if (entry.isIntersecting) observer.unobserve(entry.target)
+
+})
+},
+{
+threshold:.4
+
+
+
+})
+cards.forEach(card => {
+   
+    
+    
+    observer.observe(card)
+
+})

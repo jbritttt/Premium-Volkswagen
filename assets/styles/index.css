@@ -143,6 +143,8 @@
   text-align: left;
   display: grid;
   margin: 60px auto auto;
+  overflow:hidden;
+
 }
 
 .grid-container-1-2 p {
@@ -191,6 +193,25 @@
   font-size: 1rem;
   font-weight: 600;
 }
+
+
+/*   intersection observer for elements*/
+
+.grid-container-1-2 .intersect {
+    transform: translateX(20px);
+    transition: 1s ease;
+    opacity:0}
+    .grid-container-1-2 .show {
+    transform: translateX(0);
+    transition: 1s ease;
+    opacity:1;
+    
+   
+
+
+}
+
+
 
 .icons-container {
   display: flex;
