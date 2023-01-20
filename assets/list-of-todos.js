@@ -30,3 +30,32 @@
 // if there is time change pixels to rems
 
 // if there is time.. validate form and create fetch api and set it up for a post request 
+
+
+
+
+/*  <div class="icons-container">
+            <div class="icon-wrap">
+              <img
+                src="assets\images\eco-car-logo-design-vector-44720033.webp"
+                alt=""
+              />
+              <span>Eco-Friendly </span>
+            </div>
+            <div class="icon-wrap">
+              <img
+                src="assets\images\autonomous-car-icon-vector-44887394.webp"
+                alt=""
+              />
+              <span>High-spec tech </span>
+            </div>
+    
+            <div class="icon-wrap">
+              <img
+                src="assets\images\new_cars-e_golf-fill_up_for_a_fiver-16_9-2500x1406.webp"
+                alt=""
+              /><span>Fill up for a fiver </span>
+            </div>
+          </div>
+
+          */

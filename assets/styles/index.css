@@ -133,6 +133,8 @@
   transform: rotate(-45deg);
 }
 
+
+
 .grid-container-1-2 {
   width: 95%;
   padding-bottom: 4rem;
@@ -143,7 +145,7 @@
   text-align: left;
   display: grid;
   margin:auto;
-  overflow:hidden;
+  
 
 }
 
