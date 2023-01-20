@@ -33,8 +33,8 @@ function openMenu() {
   } else;
 }
 
-var className = "inverted";
-var scrollTrigger = 60;
+let className = "inverted";
+let scrollTrigger = 60;
 
 window.onscroll = function () {
   // We add pageYOffset for compatibility with IE.
