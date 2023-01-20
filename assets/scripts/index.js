@@ -33,6 +33,7 @@ function openMenu() {
   } else;
 }
 
+// apply styles to header on scroll
 let className = "inverted";
 let scrollTrigger = 60;
 
