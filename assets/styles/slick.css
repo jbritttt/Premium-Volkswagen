@@ -5,14 +5,19 @@ and keep them centered when images grow or shrink  */
     display: flex;
     align-items: center;
     width: 100%;
+    margin-top:3rem;
+    overflow:hidden;
     
   }
   
   .slick-slider {
     display: flex;
   
-    width: 95%;
+    width: 100%;
+  
     margin: auto;
+   
+  
   }
   
   /* set width on images because slick.css cannot target img and set image width 
@@ -69,3 +74,6 @@ and keep them centered when images grow or shrink  */
     height: 12px;
     width: 12px;
   }
+
+
+  
