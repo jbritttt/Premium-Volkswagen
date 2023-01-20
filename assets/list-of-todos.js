@@ -2,7 +2,7 @@
 
 // finish contact form layout and team image. add some text for this image encourage the user to register an interest.
 
-// fix hero image on mobile position overlay text better
+// fix hero image on mobile and position overlay text better
 
 // fix spacing between elements on mobile
 
