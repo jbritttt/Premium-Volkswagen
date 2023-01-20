@@ -10,6 +10,10 @@ and keep them centered when images grow or shrink  */
     
   }
   
+
+
+
+
   .slick-slider {
     display: flex;
   
@@ -19,6 +23,10 @@ and keep them centered when images grow or shrink  */
    
   
   }
+
+  
+
+
   
   /* set width on images because slick.css cannot target img and set image width 
   once we wrap img tags with figure and anchor tags*/
@@ -27,6 +35,14 @@ and keep them centered when images grow or shrink  */
     cursor:grab;
   }
   
+  .slick-slider-1 img {
+    width: 70%;
+    cursor:grab;
+    margin:auto
+  }
+  
+  
+
   /* prev and next buttons were not created or styled from slick.css. They were created on index.html and styled on this style
    sheet.  */
   

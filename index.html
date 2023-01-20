@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/styles/header.css" />
     <link rel="stylesheet" href="assets/styles/index.css" />
     <link rel="stylesheet" href="assets/styles/slick.css" />
+    <link rel="stylesheet" href="assets/styles/slick-footer.css" />
     <link rel="stylesheet" href="assets/styles/normalise.css" />
     <link
     rel="stylesheet"
@@ -19,7 +20,7 @@
     type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
   />
-    
+  <script src="assets/scripts/slick.js" defer></script>
     <script src="assets/scripts/index.js" defer></script>
     <meta
       name="description"
@@ -246,7 +247,7 @@
     
         <div class="grid-items golf-charger-content">
           <h2>e-Golf Battery Milage</h2>
-          <h3 class="golf-charger-title">(0-80% in 45 mins)</h3>
+        
           <p class="golf-charger-desc">
             
 The battery of the Volkswagen e-Golf has a total capacity of 35.8 kWh. The usable capacity is 32 kWh (estimate). A range of about 115 miles is achievable on a fully charged battery. The actual range will however depend on several factors including climate, terrain, use of climate control systems and driving style.
@@ -255,9 +256,6 @@ The battery of the Volkswagen e-Golf has a total capacity of 35.8 kWh. The usabl
             For example: sustaining high speeds in cold weather could result in a range of around 80 mi. However, driving at low speeds in mild weather will increase the range to around 175 mi.
           </p>
     
-          <p class="golf-charger-desc">
-            Charging is done using a Type 2 connector and the on-board charger has a maximum power of 7.2 kW. This charges a fully depleted battery back to full in around 5 hours 15 minutes. Charging the car using a regular wall plug will take around 16 hours 30 minutes.
-          </p>
 
 
           <div class="icons-container">
@@ -299,6 +297,70 @@ The battery of the Volkswagen e-Golf has a total capacity of 35.8 kWh. The usabl
     </div>
       
 
+    <div class="slick-wrapper">
+        <div class="slick-slider-1">
+          
+          <figure>
+            <a href=""><img src="assets\images\xxl_p1c4efb_lbdr5kk1_x_kz4.jpg" alt="image" /></a>
+          </figure>
+
+
+
+          <figure>
+            <a href=""><img src="assets\images\0a91e1261dae45178c9e53056d30a831.jpg" alt="image" /></a>
+          </figure>
+
+          <figure>
+            <a href=""><img src="assets\images\276f912a6b564740b7ab587e9a34cdc9.jpg" alt="image" /></a>
+          </figure>
+
+
+
+          <figure>
+            <a href=""><img src="assets\images\e5595469438344e2b2511c5203e3bd56.jpg" alt="image" /></a>
+          </figure>
+
+          
+
+          <figure>
+            <a href=""><img src="assets\images\xxl_p1c4efb_lbdr5glq_w_s1y.jpg" alt="image" /></a>
+          </figure>
+          <figure>
+            <a href=""><img src="assets\images\xxl_p1c4efb_lbdr5qrc_z_2yw.jpg" alt="" /></a>
+          </figure>
+          <figure>
+            <a href=""><img src="assets\images\xxl_p1c4efb_lbdr4gci_l_4aw.jpg" alt="image" /></a>
+          </figure>
+          <figure>
+            <a href=""
+              ><img src="assets\images\xxl_p1c4efb_lbdr5450_s_ai2.jpg" alt="image"
+            /></a>
+          </figure>
+          <figure>
+            <a href=""><img src="assets\images\xxl_p1c4efb_lbdr5dpu_v_glr.jpg" alt="image" /></a>
+          </figure>
+
+          <figure>
+            <a href=""><img src="assets\images\2c9fe1bcbf924fb7aaa4189ef1e374e7.jpg" alt="image" /></a>
+          </figure>
+
+          <figure>
+            <a href=""><img src="assets\images\582eb920e52e4484bd5c1c2417f2ab52.jpg" alt="image" /></a>
+          </figure>
+
+
+        </div>
+  
+        <button type="button" class="prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button type="button" class="next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+
+
     <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -308,40 +370,8 @@ The battery of the Volkswagen e-Golf has a total capacity of 35.8 kWh. The usabl
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <script>
-        $(".slick-slider").slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-  
-          prevArrow: ".prev",
-          nextArrow: ".next",
-          dots: true,
-          responsive: [
-            {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-  
-            {
-              breakpoint: 800,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
-  
-        $(function () {
-          // Dropdown toggle
-          $(".fa-search").click(function () {
-            $(this).next(".dropdown-search").slideToggle();
-          });
-        });
+       
+
       </script>
   </body>
 </html>
