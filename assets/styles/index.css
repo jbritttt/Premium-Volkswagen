@@ -264,6 +264,28 @@
   transform: rotate(-45deg);
 }
 
+.car-spec-wrapper{
+   display:flex;
+   justify-content: center;
+  
+}
+
+
+#car-spec{
+    text-decoration: none;
+    color:black;
+    background-color: rgb(79, 79, 247);
+    font-weight:bold;
+    color:white;
+    
+   padding:1rem;
+   border-radius:.5rem
+  
+    
+
+}
+
+
 @media screen and (min-width: 370px) {
 }
 
