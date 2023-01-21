@@ -2,136 +2,113 @@
 and keep them centered when images grow or shrink  */
 
 .slick-wrapper {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top:3rem;
-    overflow:hidden;
-    
-  }
-  
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  overflow: hidden;
+}
 
+.slick-slider {
+  display: flex;
 
+  width: 100%;
 
+  margin: auto;
+}
 
-  .slick-slider {
-    display: flex;
-  
-    width: 100%;
-  
-    margin: auto;
-   
-  
-  }
+.slick-slider-1 {
+  display: flex;
 
-  .slick-slider-1 {
-    display: flex;
-  
-    width: 100%;
-  
-    margin: auto;
-  
-   
-  
-  }
+  width: 100%;
 
-  .slick-slider-1  {
-    display: flex;
-  
-    width: 100%;
-  
-    margin: auto;
-  
-   
-  
-  }
+  margin: auto;
+}
 
+.slick-slider-1 {
+  display: flex;
 
-  
-  /* set width on images because slick.css cannot target img and set image width 
+  width: 100%;
+
+  margin: auto;
+}
+
+/* set width on images because slick.css cannot target img and set image width 
   once we wrap img tags with figure and anchor tags*/
-  .slick-slider img {
-    width: 100%;
-    cursor:grab;
-  }
-  
-  .slick-slider-1 img {
-    width: 70%;
-    cursor:grab;
-    margin:auto
-  }
-  
-  
+.slick-slider img {
+  width: 100%;
+  cursor: grab;
+}
 
-  /* prev and next buttons were not created or styled from slick.css. They were created on index.html and styled on this style
+.slick-slider-1 img {
+  width: 70%;
+  cursor: grab;
+  margin: auto;
+}
+
+/* prev and next buttons were not created or styled from slick.css. They were created on index.html and styled on this style
    sheet.  */
-  
-  .next,
-  .prev {
-    position: absolute;
-    border: none;
-    border-radius: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    height: 30px;
-    width: 30px;
-    color: white;
-    z-index: 1;
-    margin: 30px;
-    cursor: pointer;
-    margin-top: -30px;
-  }
-  
-  .next {
-    right: 0px;
-  }
-  
-  /* position the dots*/
-  .slick-slider ul {
-    position: relative;
-    top: -50px;
-    text-align: center;
-  }
-  
-  /* dots are created with slick and then styles modified on this style sheet*/
-  
-  .slick-slider ul.slick-dots li button:before {
-    background-color: black;
-    height: 12px;
-    width: 12px;
-  
-    border-radius: 100%;
-    font-size: 0px;
-    color: rgb(58, 58, 58);
-  }
-  
-  .slick-slider ul.slick-dots li button {
-    background-color: grey;
-    border-radius: 100%;
-    height: 12px;
-    width: 12px;
-    
-  }
 
+.next,
+.prev {
+  position: absolute;
+  border: none;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 30px;
+  width: 30px;
+  color: white;
+  z-index: 1;
+  margin: 30px;
+  cursor: pointer;
+  margin-top: -30px;
+}
 
-  .slick-slider-1 ul.slick-dots li button:before {
-    background-color: black;
-    height: 12px;
-    width: 12px;
-  
-    border-radius: 100%;
-    font-size: 0px;
-    color: rgb(58, 58, 58);
-    margin-top:20px
-  }
-  
-  .slick-slider-1 ul.slick-dots li button {
-    background-color: grey;
-    border-radius: 100%;
-    height: 12px;
-    width: 12px;
-    margin-top:20px
-    
-  }
+.next {
+  right: 0px;
+}
 
+/* position the dots*/
+.slick-slider ul {
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
 
-  
+/* dots are created with slick and then styles modified on this style sheet*/
+
+.slick-slider ul.slick-dots li button:before {
+  background-color: black;
+  height: 12px;
+  width: 12px;
+
+  border-radius: 100%;
+  font-size: 0px;
+  color: rgb(58, 58, 58);
+}
+
+.slick-slider ul.slick-dots li button {
+  background-color: grey;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+}
+
+.slick-slider-1 ul.slick-dots li button:before {
+  background-color: black;
+  height: 12px;
+  width: 12px;
+
+  border-radius: 100%;
+  font-size: 0px;
+  color: rgb(58, 58, 58);
+  margin-top: 20px;
+}
+
+.slick-slider-1 ul.slick-dots li button {
+  background-color: grey;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  margin-top: 20px;
+}
