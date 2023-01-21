@@ -133,6 +133,10 @@
   transform: rotate(-45deg);
 }
 
+.grid-container-1-2-wrapper {
+  margin-top: -2rem;
+}
+
 .grid-container-1-2 {
   width: 95%;
   padding-bottom: 4rem;
@@ -221,7 +225,7 @@
   opacity: 1;
 }
 
-#meet-the-team-btn {
+.register-btn {
   display: flex;
   justify-content: space-between;
   border: 0.125rem solid black;
@@ -238,18 +242,18 @@
   margin-top: 3rem;
 }
 
-#meet-the-team-btn .icons-wrapper-3 {
+.register-btn .icons-wrapper-3 {
   display: flex;
   transform: rotate(-90deg);
   margin-right: -30px;
   transition: 0.3s ease-in-out;
 }
 
-#meet-the-team-btn:hover .icons-wrapper-3 {
+.register-btn:hover .icons-wrapper-3 {
   margin-right: -40px;
 }
 
-#meet-the-team-btn .icons-wrapper-3 .scroll-icon-1-2,
+.register-btn .icons-wrapper-3 .scroll-icon-1-2,
 .scroll-icon-2-2 {
   margin: -4px;
   width: 11px;
@@ -258,12 +262,12 @@
   border-radius: 2px;
 }
 
-#meet-the-team-btn .icons-wrapper-3 .scroll-icon-1-2 {
+.register-btn .icons-wrapper-3 .scroll-icon-1-2 {
   transform: rotate(45deg);
   margin-right: -1px;
 }
 
-#meet-the-team-btn .icons-wrapper-3 .scroll-icon-2-2 {
+.register-btn .icons-wrapper-3 .scroll-icon-2-2 {
   transform: rotate(-45deg);
 }
 
@@ -418,6 +422,10 @@ input[type="submit"]:hover {
     font-size: 1.375rem;
   }
 
+  .grid-container-1-2-wrapper {
+    margin: 0;
+  }
+
   .grid-container-1-2 .golf-charger-images {
     width: 500px;
     height: auto;
@@ -508,7 +516,7 @@ input[type="submit"]:hover {
   }
 
   .grid-container-1-2 {
-    margin-top: 80px;
+    margin-top: 4rem;
     padding-bottom: 100px;
     gap: 30px;
     column-gap: 90px;

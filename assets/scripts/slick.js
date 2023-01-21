@@ -32,24 +32,18 @@ $(".slick-slider-1").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 
-  prevArrow: ".prev",
-  nextArrow: ".next",
+  prevArrow: ".prev-1",
+  nextArrow: ".next-1",
   dots: true,
   responsive: [
     {
       breakpoint: 900,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 2,
       },
     },
 
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
+   
   ],
 });

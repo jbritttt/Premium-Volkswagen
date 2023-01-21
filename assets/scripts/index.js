@@ -1,3 +1,54 @@
+
+
+// applies styles to header on scroll
+let className = "inverted";
+let scrollTrigger = 60;
+
+window.onscroll = function () {
+  if (window.scrollY >= scrollTrigger) {
+    document.getElementsByTagName("header")[0].classList.add(className);
+  } else {
+    document.getElementsByTagName("header")[0].classList.remove(className);
+  }
+};
+
+// intersection observer/ slide in affect on text content
+
+const cards = document.querySelectorAll(".intersect");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("show", entry.isIntersecting);
+
+      if (entry.isIntersecting) observer.unobserve(entry.target);
+    });
+  },
+  {
+    threshold: 0.4,
+  }
+);
+cards.forEach((card) => {
+  observer.observe(card);
+});
+
+//scrolls smoothly to elements on the page
+
+$(function () {
+  $(".jump-to-form").click(function () {
+    $("html,body").animate({ scrollTop: $("#L1").offset().top - 210 }, 1500);
+    return false;
+  });
+});
+
+$(function () {
+  $(".jump-to-slider").click(function () {
+    $("html,body").animate({ scrollTop: $("#L2").offset().top - 145 }, 1500);
+    return false;
+  });
+});
+
+
 // move styles to css on friday morning
 
 
@@ -33,44 +84,15 @@ function openMenu() {
   } else;
 }
 
-// apply styles to header on scroll
-let className = "inverted";
-let scrollTrigger = 60;
-
-window.onscroll = function () {
-  // We add pageYOffset for compatibility with IE.
-  if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-    document.getElementsByTagName("header")[0].classList.add(className);
-  } else {
-    document.getElementsByTagName("header")[0].classList.remove(className);
-  }
-};
 
 
 
-// intersection observer/ slide in affect on text content
+let form = document.querySelector('.form')
+let formContainer = document.querySelector('.form-container')
 
-const cards = document.querySelectorAll('.intersect')
-
-const observer = new IntersectionObserver(entries =>{
-entries.forEach(entry =>{
-
-entry.target.classList.toggle('show', entry.isIntersecting)
-
-if (entry.isIntersecting) observer.unobserve(entry.target)
-
-})
-},
-{
-threshold:.4
-
-
-
-})
-cards.forEach(card => {
-   
-    
-    
-    observer.observe(card)
-
-})
+form.addEventListener("click", function(e){ 
+  
+  form.style.display = 'none'
+  formContainer.innerHTML = 'Thank You. Your message was successfully sent'
+  
+  e.preventDefault() });

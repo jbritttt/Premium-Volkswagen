@@ -25,14 +25,6 @@ and keep them centered when images grow or shrink  */
   margin: auto;
 }
 
-.slick-slider-1 {
-  display: flex;
-
-  width: 100%;
-
-  margin: auto;
-}
-
 /* set width on images because slick.css cannot target img and set image width 
   once we wrap img tags with figure and anchor tags*/
 .slick-slider img {
@@ -50,22 +42,36 @@ and keep them centered when images grow or shrink  */
    sheet.  */
 
 .next,
-.prev {
+.prev,
+.next-1,
+.prev-1 {
   position: absolute;
   border: none;
-  border-radius: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  height: 30px;
-  width: 30px;
-  color: white;
+
+  background-color: transparent;
+  height: 70px;
+  width: 70px;
+
   z-index: 1;
-  margin: 30px;
+  margin: 0px;
   cursor: pointer;
   margin-top: -30px;
 }
 
-.next {
+.next,
+.next-1 {
   right: 0px;
+}
+
+.fa-chevron-right:hover,
+.fa-chevron-left:hover {
+  font-size: 33px;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+  font-size: 30px;
+  color: rgb(110, 110, 110);
 }
 
 /* position the dots*/
@@ -102,7 +108,7 @@ and keep them centered when images grow or shrink  */
   border-radius: 100%;
   font-size: 0px;
   color: rgb(58, 58, 58);
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .slick-slider-1 ul.slick-dots li button {
@@ -110,5 +116,21 @@ and keep them centered when images grow or shrink  */
   border-radius: 100%;
   height: 12px;
   width: 12px;
-  margin-top: 20px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1130px) {
+  .slick-slider-1 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .slick-slider ul.slick-dots li button:before {
+    display: none;
+  }
+
+  .slick-slider ul.slick-dots li button {
+    display: none;
+  }
 }
