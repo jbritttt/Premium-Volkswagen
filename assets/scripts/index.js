@@ -86,13 +86,15 @@ function openMenu() {
 
 
 
-
 let form = document.querySelector('.form')
-let formContainer = document.querySelector('.form-container')
+let submitBtn = document.querySelector('#submit')
+let formElement = document.querySelector('.form-container h4')
 
-form.addEventListener("click", function(e){ 
+submitBtn.addEventListener('click', function(e){ 
   
+  e.preventDefault() 
+
   form.style.display = 'none'
-  formContainer.innerHTML = 'Thank You. Your message was successfully sent'
-  
-  e.preventDefault() });
+  formElement.innerHTML = 'Thank You. Your message was successfully sent....'
+
+ });
