@@ -171,13 +171,13 @@
   border: 1px solid #fff;
 }
 
-.grid-container-1-2 .grid-items #img-1 {
+.grid-container-1-2 .grid-items .img-1 {
   width: 90%;
   height: auto;
   margin-bottom: 1rem;
 }
 
-.grid-container-1-2 .grid-items #img-2 {
+.grid-container-1-2 .grid-items .img-2 {
   position: absolute;
   right: 5%;
   bottom: -12px;
@@ -279,7 +279,7 @@
 #car-spec {
   text-decoration: none;
   color: black;
-  background-color: rgb(85, 85, 241);
+  background-color:  rgb(59, 59, 255);
   font-weight: bold;
   color: white;
 
@@ -443,7 +443,7 @@ font-family: arial;
     margin-top: 4rem;
   }
 
-  .grid-container-1-2 .grid-items #img-2 {
+  .grid-container-1-2 .grid-items .img-2 {
     width: 45%;
     height: auto;
   }

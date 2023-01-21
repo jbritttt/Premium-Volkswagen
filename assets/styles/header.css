@@ -29,7 +29,7 @@ header {
   transition: 0.5s;
 }
 
-#logo {
+.logo {
   width: 200px;
   height: auto;
 }
@@ -84,10 +84,7 @@ nav .menu {
   padding-bottom: 20px;
 }
 
-nav .menu #enquire-link {
-  background-color: rgb(85, 85, 241);
-  border-radius: 1.2rem;
-}
+
 
 nav .menu li {
   border-bottom: 1px solid rgb(218, 217, 217);
@@ -116,6 +113,31 @@ nav .menu li a:hover {
   background-color: #232728;
   box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
 }
+
+
+@media screen and (min-width: 1115px) {
+  nav .menu #enquire-link {
+    background-color: rgb(59, 59, 255);
+    border-radius:4rem;
+    text-decoration: none;
+
+  }
+  
+  nav .menu #enquire-link:hover {
+    background-color:transparent
+    
+    
+    
+  }
+  
+
+}
+
+
+
+
+
+
 
 @media screen and (min-width: 1115px) {
   .header-wrapper {
@@ -171,7 +193,7 @@ nav .menu li a:hover {
     text-decoration: underline;
   }
 
-  #logo {
+  .logo {
     width: 240px;
     height: auto;
   }

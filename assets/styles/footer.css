@@ -46,7 +46,7 @@ footer {
   color: white;
 }
 .footer-grid a:hover {
-  color: #2baad4;
+  color:#af9644;
 }
 hr {
   width: 95%;
@@ -97,7 +97,7 @@ footer .copyright {
     gap: 0;
   }
 
-  .footer-grid #logo {
+  .footer-grid .logo {
     margin-right: 160px;
   }
 }
