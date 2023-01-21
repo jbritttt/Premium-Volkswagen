@@ -1,3 +1,8 @@
+
+
+
+
+
 .hero {
   display: flex;
   justify-content: center;
@@ -150,6 +155,18 @@
   overflow: hidden;
 }
 
+/*    This will reverse the columns for mobile because on desktop they are staggered from left to right. So both grid and flex are applied on this container*/
+.reverse-items{
+
+ 
+  display:flex;
+   flex-direction: column-reverse;
+  
+ }
+ 
+
+
+
 .grid-container-1-2 p {
   margin-left: 0;
   line-height: 1.5rem;
@@ -224,6 +241,11 @@
   transition: 0.7s ease;
   opacity: 1;
 }
+
+
+
+
+
 
 .register-btn {
   display: flex;
@@ -511,6 +533,10 @@ font-family: arial;
   .form-container {
     width: 50%;
   }
+
+
+
+
 }
 
 @media screen and (min-width: 1030px) {
@@ -523,8 +549,8 @@ font-family: arial;
   }
 
   .grid-container-1-2 {
-    margin-top: 4rem;
-    padding-bottom: 100px;
+    margin-top: 2rem;
+    padding-bottom:2rem;
     gap: 30px;
     column-gap: 90px;
   }
@@ -532,6 +558,13 @@ font-family: arial;
   .icons-container .icon-wrap span {
     margin-right: 1rem;
   }
+
+
+   
+
+
+
+
 }
 
 @media screen and (min-width: 1180px) {
@@ -544,6 +577,18 @@ font-family: arial;
     margin-bottom: 4rem;
     border-bottom: 1px solid rgb(196, 195, 195);
   }
+
+
+/* sets the initial flex rule back to grid*/
+.reverse-items{
+
+ 
+  display:grid;
+   
+  
+ }
+
+
 
   .grid-container-1-2 .grid-items {
     width: 100%;
