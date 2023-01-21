@@ -187,10 +187,7 @@ nav .menu li a:hover {
     color: #fff;
   }
 
-  nav .menu li a:hover {
-    color: white;
-    text-decoration: underline;
-  }
+ 
 
   .logo {
     width: 240px;
