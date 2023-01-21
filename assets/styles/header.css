@@ -117,8 +117,7 @@ nav .menu li a:hover {
 
 @media screen and (min-width: 1115px) {
   nav .menu #enquire-link {
-    background-color: rgb(180, 180, 252);
-    border-radius:4rem;
+  
     text-decoration: none;
 
   }
