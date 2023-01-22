@@ -248,7 +248,8 @@ nav .menu li a:hover {
   .header-wrapper .dropdown-search {
     
     top: 7.06rem;
-    border:none
+    border:none;
+    display:none
    
   }
 
