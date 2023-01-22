@@ -168,21 +168,13 @@ nav .menu li a:hover {
   }
 
   
-
-  input {
-    width: 100%;
-    text-align: left;
-   
-    display: block;
-    text-align: center;
-    margin: auto;
-  }
-
   .dropdown-search input {
+    width: 50%;
+    display: block;
+    margin: auto;
     border: none;
     border-bottom: 1px solid #736A51;
     text-align: left;
-   
     color: white;
     font-size: 16px;
     outline: none;
