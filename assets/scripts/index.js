@@ -116,7 +116,7 @@ submitBtn.addEventListener('click', function(e){
 
  // Hide navigation menu when the user clicks on inquire link for mobile/tablet screens
 
-const nav = document.querySelector('nav')
+
 document.getElementById('enquire-link').addEventListener('click', function(e){ 
   
  
