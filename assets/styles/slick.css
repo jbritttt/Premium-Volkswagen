@@ -9,6 +9,8 @@ and keep them centered when images grow or shrink  */
   overflow: hidden;
 }
 
+
+
 .slick-slider {
   display: flex;
 
@@ -33,7 +35,7 @@ and keep them centered when images grow or shrink  */
 }
 
 .slick-slider-1 img {
-  width: 70%;
+  width: 100%;
   cursor: grab;
   margin: auto;
 }
@@ -49,8 +51,8 @@ and keep them centered when images grow or shrink  */
   border: none;
 
   background-color: transparent;
-  height: 70px;
-  width: 70px;
+  height: 40px;
+  width: 40px;
 
   z-index: 1;
   margin: 0px;
@@ -119,10 +121,36 @@ and keep them centered when images grow or shrink  */
   margin-top: 50px;
 }
 
-@media screen and (min-width: 1130px) {
-  .slick-slider-1 {
-    width: 80%;
+
+@media screen and (min-width: 550px) {
+  .slick-slider-1 img  {
+    width: 70%;
   }
+
+  .next,
+  .prev,
+  .next-1,
+  .prev-1 {
+   
+    height: 100px;
+    width: 100px;
+  
+
+  }
+
+
+
+}
+
+@media screen and (min-width: 1130px) {
+
+  .slick-slider-1 img {
+    width: 50%;
+  }
+
+ 
+
+
 }
 
 @media screen and (max-width: 550px) {
