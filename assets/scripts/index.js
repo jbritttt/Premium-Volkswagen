@@ -120,7 +120,7 @@ const nav = document.querySelector('nav')
 document.getElementById('enquire-link').addEventListener('click', function(e){ 
   
  
-  nav.style.left = "-20rem";
+  openMenu()
   
 
  });
