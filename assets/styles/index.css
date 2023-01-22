@@ -12,17 +12,17 @@
 }
 
 .hero .hero-title {
-  align-self: center;
+
   position: absolute;
   width: 90%;
   height: auto;
   margin: auto;
-  margin-top: 8rem;
+  margin-top: 6.5rem;
 }
 
 .hero .hero-title h1 {
   color: #fff;
-  font-size: 1.875rem;
+  font-size: 3rem;
 
   font-weight: 300;
   line-height: 1.2;
@@ -33,6 +33,7 @@
   color: #fff;
   font-size: 1.125rem;
   font-weight: 500;
+  display:none
 }
 
 .btn-wrapper {
@@ -444,8 +445,11 @@ font-family: arial;
     font-size: 3.125rem;
   }
 
+
+
   .hero .hero-title h2 {
     font-size: 1.375rem;
+    display:block
   }
 
   .grid-container-1-2-wrapper {
@@ -544,6 +548,12 @@ font-family: arial;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .hero .hero-title {
+    margin-top:8rem
+  }
+
+
 
   .grid-container-1-2 {
     margin-top: 2rem;
