@@ -181,7 +181,7 @@ nav .menu li a:hover {
     margin: 0;
   }
 
-  input {
+  .header-wrapper .dropdown-search  input {
     border: none;
     border-bottom: 1px solid white;
     text-align: center;
