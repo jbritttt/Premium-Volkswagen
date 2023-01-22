@@ -277,49 +277,22 @@ nav .menu li a:hover {
     align-items: left;
     position: absolute;
     background-color: #fff;
-    list-style-type: none;
     top: 6.99rem;
     padding: 0;
     margin: 0;
     padding: 1rem;
     font-family: sans-serif;
-
     box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
     font-size: 0.8rem;
-
     border-left: 1px solid rgb(209, 209, 209);
     border-right: 1px solid rgb(209, 209, 209);
     background-color: #232728;
-    display: none;
+    
   }
 
-  .dropdown-new-cars:hover {
-    display: block;
-  }
-
-  .new-cars:hover ~ .dropdown-new-cars {
-    display: block;
-  }
-
-  .dropdown-pre-owned:hover {
-    display: block;
-  }
-
-  .pre-owned:hover ~ .dropdown-pre-owned {
-    display: block;
-  }
-
-  .dropdown-service-parts:hover {
-    display: block;
-  }
-
-  .service-parts:hover ~ .dropdown-service-parts {
-    display: block;
-  }
-
+  
   nav .menu .list-items a {
     display: block;
-
     height: 0;
     padding: 0.5rem;
     line-height: 0px;
