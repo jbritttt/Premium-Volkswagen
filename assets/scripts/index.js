@@ -111,3 +111,16 @@ submitBtn.addEventListener('click', function(e){
     $(this).next(".dropdown-search").slideToggle();
   });
 });
+
+
+
+ // Hide navigation menu when the user clicks on inquire link for mobile/tablet screens
+
+const nav = document.querySelector('nav')
+document.getElementById('enquire-link').addEventListener('click', function(e){ 
+  
+ 
+  nav.style.left = "-20rem";
+  
+
+ });
