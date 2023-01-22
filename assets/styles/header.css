@@ -84,8 +84,6 @@ nav .menu {
   padding-bottom: 20px;
 }
 
-
-
 nav .menu li {
   border-bottom: 1px solid rgb(218, 217, 217);
 }
@@ -107,7 +105,6 @@ nav .menu li a {
 
 nav .menu li a:hover {
   color: #af9644;
-  
 }
 
 .inverted {
@@ -115,72 +112,44 @@ nav .menu li a:hover {
   box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
 }
 
-
-
 /***********************************  <Drop down Menu MOBILE>  ***************************************/
 
-
-.dropdown-items{
-  
- list-style-type:none;
- padding:0;
- margin:0;
- display:none
+.dropdown-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
 }
 
-
-
-.dropdown-new-cars:hover{
-
-  display:block
+.dropdown-new-cars:hover {
+  display: block;
 }
-
 
 .new-cars:hover ~ .dropdown-new-cars {
-
-  display:block
+  display: block;
 }
 
-
-.dropdown-pre-owned:hover{
-
-  display:block
+.dropdown-pre-owned:hover {
+  display: block;
 }
 
-
-.pre-owned:hover ~ .dropdown-pre-owned{
-
-  display:block
+.pre-owned:hover ~ .dropdown-pre-owned {
+  display: block;
 }
 
-.dropdown-service-parts:hover{
-
-  display:block
+.dropdown-service-parts:hover {
+  display: block;
 }
 
+.service-parts:hover ~ .dropdown-service-parts {
+  display: block;
+}
 
-.service-parts:hover ~ .dropdown-service-parts{
-  display:block
-} 
-
-
-.fa-caret-down{
- 
-  margin-left:.4rem;
-   
-   
-   
- 
- }
-
+.fa-caret-down {
+  margin-left: 0.4rem;
+}
 
 /***********************************  <Drop down Menu MOBILE/>  ***************************************/
-
-
-
-
-
-
 
 @media screen and (min-width: 1115px) {
   .header-wrapper {
@@ -217,11 +186,8 @@ nav .menu li a:hover {
   }
 
   nav .menu #enquire-link {
-  
     text-decoration: none;
-
   }
-
 
   nav .menu li {
     border: none;
@@ -232,131 +198,96 @@ nav .menu li a:hover {
     font-weight: 500;
 
     font-weight: bold;
-    margin-top:2rem;
-height:3rem;
+    margin-top: 2rem;
+    height: 3rem;
     font-size: 16px;
     text-decoration: none;
     color: #fff;
   }
 
- 
-/***********************************  <Drop down Menu DESKTOP>  ***************************************/
+  /***********************************  <Drop down Menu DESKTOP>  ***************************************/
 
+  .dropdown-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: absolute;
+    background-color: #fff;
+    list-style-type: none;
+    top: 6.99rem;
+    padding: 0;
+    margin: 0;
+    padding: 1rem;
+    font-family: sans-serif;
 
-.dropdown-items{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:left;
-  position:absolute;
-  background-color: #fff;
-  list-style-type:none;
- top:6.99rem;
- padding:0;
- margin:0;
- padding:1rem;
- font-family: sans-serif;
- 
- box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
- font-size:.8rem;
- 
- border-left:1px solid rgb(209, 209, 209);
- border-right:1px solid rgb(209, 209, 209);
- background-color:#232728;
- display:none
-}
+    box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
+    font-size: 0.8rem;
 
+    border-left: 1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+    background-color: #232728;
+    display: none;
+  }
 
+  .dropdown-new-cars:hover {
+    display: block;
+  }
 
+  .new-cars:hover ~ .dropdown-new-cars {
+    display: block;
+  }
 
+  .dropdown-pre-owned:hover {
+    display: block;
+  }
 
+  .pre-owned:hover ~ .dropdown-pre-owned {
+    display: block;
+  }
 
-.dropdown-new-cars:hover{
+  .dropdown-service-parts:hover {
+    display: block;
+  }
 
-  display:block
-}
+  .service-parts:hover ~ .dropdown-service-parts {
+    display: block;
+  }
 
+  nav .menu .list-items a {
+    display: block;
 
+    height: 0;
+    padding: 0.5rem;
+    line-height: 0px;
+    font-size: 16px;
+    color: rgb(221, 219, 219);
+    font-weight: 200;
+    letter-spacing: 0.03rem;
+  }
 
+  nav .menu .list-items .view-all-link {
+    font-size: 18px;
+    font-weight: 200;
+  }
 
+  .new-cars,
+  .pre-owned,
+  .service-parts {
+    display: flex;
+    flex-direction: column;
+  }
 
-.new-cars:hover ~ .dropdown-new-cars {
+  .fa-caret-down {
+    margin: 0;
+    text-align: center;
+    margin-top: 0.4rem;
+    width: 100%;
 
-  display:block
-}
+    color: rgb(184, 184, 184);
+  }
 
-
-.dropdown-pre-owned:hover{
-
-  display:block
-}
-
-
-.pre-owned:hover ~ .dropdown-pre-owned{
-
-  display:block
-}
-
-.dropdown-service-parts:hover{
-
-  display:block
-}
-
-
-.service-parts:hover ~ .dropdown-service-parts{
-  display:block
-} 
-
-
-nav .menu .list-items a{
-  display:block;
-
-  height:0;
-  padding:.5rem;
-  line-height:0px;
- font-size:16px;
-  color:rgb(221, 219, 219);
-  font-weight: 200;
-  letter-spacing: .03rem;
-
- 
-}
-
-nav .menu .list-items .view-all-link {
- 
- font-size:18px;
- font-weight:200
- 
-
- 
-}
-
-
-
-.new-cars,.pre-owned,.service-parts{
-  display:flex;
-  flex-direction: column;
-  
- }
- 
-
-
-
-.fa-caret-down{
-  margin:0;
- text-align: center;
- margin-top:.4rem;
-  width:100%;
-  
-  color:rgb(184, 184, 184)
-
-}
-
-/***********************************  <Drop down Menu DESKTOP/>  ***************************************/
-
-
-  
-
+  /***********************************  <Drop down Menu DESKTOP/>  ***************************************/
 
   .logo {
     width: 240px;
