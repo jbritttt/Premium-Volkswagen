@@ -85,6 +85,7 @@ function openMenu() {
 }
 
 
+// prevent default on form and display thankyou message on page
 
 let form = document.querySelector('.form')
 let submitBtn = document.querySelector('#submit')
@@ -98,3 +99,15 @@ submitBtn.addEventListener('click', function(e){
   formElement.innerHTML = 'Thank You. Your message was successfully sent....'
 
  });
+
+
+
+ // Makes search bar drop down on click
+
+ $(function () {
+  // Dropdown toggle
+  $(".fa-search").click(function () {
+    console.log('clicked')
+    $(this).next(".dropdown-search").slideToggle();
+  });
+});
