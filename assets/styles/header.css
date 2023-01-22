@@ -9,7 +9,7 @@ body {
  /***********************************  <Drop down search box>  ***************************************/
 
   .site-search {
-    width: 50%;
+    width: 80%;
     margin: auto;
     text-align: left;
     background-color: #232728;
@@ -231,7 +231,10 @@ nav .menu li a:hover {
     width:10rem
   }
 
-
+  .site-search {
+    width: 50%;
+  
+  }
 
   header .contact-num-wrapper .fa-search {
     font-size: 20px;
