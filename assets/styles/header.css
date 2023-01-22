@@ -9,8 +9,8 @@ body {
  /***********************************  <Drop down search box>  ***************************************/
 
   .site-search {
-    width: 80%;
-    margin: auto;
+    
+    
     text-align: left;
     background-color: #232728;
     border-bottom: 1px solid #716850;
@@ -23,7 +23,7 @@ body {
 
   
   .dropdown-search input {
-    width: 50%;
+    width: 80%;
     display: block;
     margin: auto;
     border: none;
@@ -231,9 +231,9 @@ nav .menu li a:hover {
     width:10rem
   }
 
-  .site-search {
+  .dropdown-search input {
     width: 50%;
-  
+ 
   }
 
   header .contact-num-wrapper .fa-search {
