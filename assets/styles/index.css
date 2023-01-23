@@ -138,9 +138,12 @@
 
 .grid-container-1-2-wrapper {
   margin-top: -2rem;
+
+  
 }
 
 .grid-container-1-2 {
+  display: grid;
   width: 95%;
   padding-bottom: 4rem;
   grid-template-columns: 1fr;
@@ -148,7 +151,7 @@
   row-gap: 20px;
   gap: 20px;
   text-align: left;
-  display: grid;
+  
   margin: auto;
   overflow: hidden;
 }
@@ -175,6 +178,8 @@
   transition: 0.3s;
   position: relative;
   width: 100%;
+
+  
 }
 
 .grid-container-1-2 .grid-items .internal-border {
@@ -190,6 +195,7 @@
   width: 90%;
   height: auto;
   margin-bottom: 1rem;
+ 
 }
 
 .grid-container-1-2 .grid-items .img-2 {
