@@ -556,6 +556,7 @@ font-family: arial;
 
 
   .grid-container-1-2 {
+    grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
     padding-bottom:2rem;
     gap: 30px;
@@ -576,10 +577,10 @@ font-family: arial;
 
 @media screen and (min-width: 1180px) {
   .grid-container-1-2 {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
 
     width: 90%;
-
+gap:2rem;
     margin-top: -1.8rem;
     padding-bottom:6rem;
     margin-bottom: 4rem;
