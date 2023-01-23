@@ -10,20 +10,16 @@ $(".slick-slider").slick({
   dots: true,
   responsive: [
     {
-      breakpoint: 1180,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      },
-    },
-
-    {
-      breakpoint: 830,
+      breakpoint: 1190,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
+
+   
+
+
   ],
 });
 
