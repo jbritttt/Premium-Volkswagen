@@ -210,6 +210,22 @@
 
 /*   intersection observer for elements*/
 
+
+
+
+.icons-container .intersect {
+  transform: translateY(20px);
+  transition: 0.7s ease;
+  opacity: 0;
+}
+.icons-container .show {
+  transform: translateY(0);
+  transition: 0.7s ease;
+  opacity: 1;
+}
+
+
+
 .grid-container-1-2 .intersect {
   transform: translateX(20px);
   transition: 0.7s ease;
@@ -323,13 +339,13 @@
 }
 
 .icons-container {
-  width: 95%;
+  width: 60%;
   padding-bottom: 4rem;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   row-gap: 20px;
-  gap: 20px;
-  text-align: center;
+  gap: 80px;
+ 
   display: grid;
   margin: auto;
 }
@@ -337,19 +353,32 @@
 .icons-container .icon-wrap {
   display: flex;
   align-items: center;
+width:100%;
+  justify-content:center;
 
-  justify-content: stretch;
+  margin:auto
+  
 }
 
-.icons-container .icon-wrap img {
-  width: 20%;
+
+.icons-container .icon-wrap div {
+  width: 50%;
   height: auto;
+
+  
 }
+.icons-container .icon-wrap img {
+  width: 60%;
+  height: auto;
+  
+}
+
 
 .icons-container .icon-wrap span {
-  margin-left: 3rem;
+  width: 50%;
   font-size: 1rem;
   font-weight: 600;
+  
 }
 
 #team-img {
@@ -486,9 +515,11 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
+
   .icons-container {
-    flex-wrap: nowrap;
+    width: 95%;
     justify-content: space-between;
+    text-align:center
   }
 
   .icons-container .icon-wrap span {
@@ -501,6 +532,7 @@ input[type="submit"]:hover {
 
   .icons-container {
     grid-template-columns: 1fr 1fr 1fr;
+    gap:20px
   }
 
   .icons-container .icon-wrap {
@@ -606,7 +638,7 @@ input[type="submit"]:hover {
   }
 
   .icons-container .icon-wrap img {
-    width: 30%;
+    width: 50%;
     height: auto;
   }
 
