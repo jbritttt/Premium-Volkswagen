@@ -78,11 +78,6 @@ $(function () {
   });
  
 
-
-
-
-
-
 $(function () {
   $(".jump-to-slider").click(function () {
     $("html,body").animate({ scrollTop: $("#L2").offset().top - 145 }, 1500);

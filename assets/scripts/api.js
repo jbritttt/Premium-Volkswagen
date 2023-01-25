@@ -21,6 +21,7 @@ const searchButton = document
     tableContainer.style.display = "block";
 
     getData(searchValue.value);
+    searchValue.value = ''
   });
 
 
