@@ -6,7 +6,7 @@
   right: 0;
   background-color: white;
   z-index: 10;
-  
+  overflow: scroll;
  display: none;
  
 }
@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top:9rem;
-  overflow: scroll;
+
  
 }
 
