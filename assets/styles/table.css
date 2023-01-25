@@ -6,30 +6,33 @@
   right: 0;
   background-color: white;
   z-index: 10;
-  overflow: hidden;
-  display: none;
-  overflow: scroll;
+  
+ display: none;
+ 
 }
 
 .table-container .table-wrapper {
-  margin-top: 15rem;
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:9rem;
+  overflow: scroll;
+ 
 }
 
 .close-icon {
-  float: right;
-
+  
   display: flex;
   justify-content: center;
-
   align-items: center;
-  margin-right: 3rem;
-
   font-size: 2.5rem;
   font-weight: bold;
   width: 3rem;
   height: 3rem;
   cursor: pointer;
-
+ margin-left:3%;
+ margin-bottom:1rem;
   color: black;
 }
 
@@ -39,16 +42,17 @@
   width: 100%;
   text-align: center;
   font-size: 1rem;
+  
 }
 
 .responsive-table {
   width: 100%;
-
   height: 100%;
   text-align: center;
   margin: 0;
   border-spacing: 0;
   margin: auto;
+  
 }
 
 thead tr th {
@@ -88,12 +92,23 @@ tbody td {
   tbody th {
     padding: 1rem;
   }
+
+ 
+
 }
 
 @media screen and (min-width: 750px) {
   .responsive-table {
     width: 80%;
   }
+
+  .close-icon {
+ 
+    margin-left:9%;
+    
+   }
+ 
+
 }
 
 @media screen and (min-width: 1115px) {

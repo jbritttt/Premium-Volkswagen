@@ -13,9 +13,6 @@ window.onscroll = function () {
     header.add(className);
   }
 
-
-
-
   //if table data is visable then keep the color of black when scrolling up
   else if (
     window.scrollY <= scrollTrigger &&

@@ -16,7 +16,7 @@ const searchButton = document
     document.getElementsByTagName("header")[0].classList.add(className);
 
     loading.innerHTML = "LOADING . . . . . . ";
-    
+    loading.style.display = 'block';
 
     tableContainer.style.display = "block";
 
@@ -44,7 +44,7 @@ function getData(val) {
 
         tableBody.replaceChildren();
 
-        loading.innerHTML = "";
+        loading.style.display = 'none';
 
         data.forEach((item) => {
           tableBody.innerHTML += `
@@ -61,12 +61,14 @@ function getData(val) {
       }
 
       if (data == "") {
+        loading.style.display = 'block';
         loading.innerHTML = "Sorry there are no results to show . . . . ";
       }
     },
     error: function ajaxError(jqXHR) {
       const searchValue = document.querySelector(".site-search");
       if (searchValue.value == "") {
+        loading.style.display = 'block';
         loading.innerHTML = "Please enter a search term . . . . ";
       } else {
         loading.innerHTML = "Sorry there has been an error . . . . ";
