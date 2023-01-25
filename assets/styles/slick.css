@@ -39,7 +39,7 @@ and keep them centered when images grow or shrink  */
   margin: auto;
 }
 
-/* prev and next buttons were not created or styled from slick.css. They were created on index.html and styled on this style
+/* prev and next buttons were not created or styled from slick.css cdn. They were created on index.html and styled on this style
    sheet.  */
 
 .next,

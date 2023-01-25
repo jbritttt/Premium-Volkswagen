@@ -1,0 +1,103 @@
+.table-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 6rem;
+  right: 0;
+  background-color: white;
+  z-index: 10;
+  overflow: hidden;
+  display: none;
+  overflow: scroll;
+}
+
+.table-container .table-wrapper {
+  margin-top: 15rem;
+}
+
+.close-icon {
+  float: right;
+
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  margin-right: 3rem;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+
+  color: black;
+}
+
+#loading {
+  position: relative;
+  top: -3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.responsive-table {
+  width: 100%;
+
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  border-spacing: 0;
+  margin: auto;
+}
+
+thead tr th {
+  padding: 0.5rem;
+}
+
+tr th {
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.top-header {
+  background-color: black;
+  color: white;
+}
+
+tbody td {
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 550px) {
+  .responsive-table {
+    width: 90%;
+  }
+
+  thead tr th {
+    padding: 1rem;
+  }
+
+  tbody th {
+    padding: 1rem;
+  }
+
+  tbody th {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .responsive-table {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1115px) {
+  .table-container {
+    top: 7rem;
+  }
+}
