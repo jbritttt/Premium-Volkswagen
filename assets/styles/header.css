@@ -68,13 +68,7 @@ header .contact-num-wrapper .fa-search {
   color: rgb(202, 202, 202);
 }
 
-.header-icons-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 8%;
-  width: 8rem;
-}
+
 
 /***********************************  <Drop down search box/>  ***************************************/
 
@@ -101,6 +95,19 @@ header {
   z-index: 10;
   transition: 0.5s;
 }
+
+.header-icons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 8%;
+  width: 5.5rem;
+}
+
+
+
+
+
 
 .logo {
   width: 200px;
@@ -222,6 +229,17 @@ nav .menu li a:hover {
 }
 
 /***********************************  <Drop down Menu MOBILE/>  ***************************************/
+
+
+@media screen and (min-width: 550px) {
+
+  .header-icons-wrapper {
+    
+    width: 8rem;
+  }
+  
+}
+
 
 @media screen and (min-width: 1115px) {
   /***********************************  <Drop down search box>  ***************************************/
