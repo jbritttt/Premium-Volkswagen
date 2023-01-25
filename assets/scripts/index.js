@@ -49,15 +49,39 @@ cards.forEach((card) => {
 
 
 
+//scrolls smoothly to elements on the page at breakpoints
 
-//scrolls smoothly to elements on the page
 
 $(function () {
+  if ($(window).width() > 393) {
+  
   $(".jump-to-form").click(function () {
-    $("html,body").animate({ scrollTop: $("#L1").offset().top - 210 }, 1500);
+    
+    $("html,body").animate({ scrollTop: $("#L1").offset().top -210}, 1500);
     return false;
+    
   });
+  }
 });
+
+
+  $(function () {
+    if ($(window).width() < 393) {
+    
+    $(".jump-to-form").click(function () {
+      
+      $("html,body").animate({ scrollTop: $("#L1").offset().top -235}, 1500);
+      return false;
+      
+    });
+    }
+  });
+ 
+
+
+
+
+
 
 $(function () {
   $(".jump-to-slider").click(function () {
