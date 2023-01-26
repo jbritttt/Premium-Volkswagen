@@ -1,6 +1,3 @@
-
-
-
 // applies styles to header on scroll
 
 window.onscroll = function () {
@@ -12,6 +9,9 @@ window.onscroll = function () {
   if (window.scrollY >= scrollTrigger) {
     header.add(className);
   }
+
+
+
 
   //if table data is visable then keep the color of black when scrolling up
   else if (
@@ -49,34 +49,26 @@ cards.forEach((card) => {
 
 
 
-//scrolls smoothly to elements on the page at breakpoints
 
+//scrolls smoothly to elements on the page at breakpoints
 
 $(function () {
   if ($(window).width() > 393) {
-  
-  $(".jump-to-form").click(function () {
-    
-    $("html,body").animate({ scrollTop: $("#L1").offset().top -210}, 1500);
-    return false;
-    
-  });
+    $(".jump-to-form").click(function () {
+      $("html,body").animate({ scrollTop: $("#L1").offset().top - 210 }, 1500);
+      return false;
+    });
   }
 });
 
-
-  $(function () {
-    if ($(window).width() < 393) {
-    
+$(function () {
+  if ($(window).width() < 393) {
     $(".jump-to-form").click(function () {
-      
-      $("html,body").animate({ scrollTop: $("#L1").offset().top -235}, 1500);
+      $("html,body").animate({ scrollTop: $("#L1").offset().top - 235 }, 1500);
       return false;
-      
     });
-    }
-  });
- 
+  }
+});
 
 $(function () {
   $(".jump-to-slider").click(function () {
@@ -84,7 +76,6 @@ $(function () {
     return false;
   });
 });
-
 
 
 
@@ -123,8 +114,6 @@ function openMenu() {
 
 
 
-
-
 // prevent default on form and display thankyou message on page
 
 let form = document.querySelector(".form");
@@ -140,8 +129,6 @@ submitBtn.addEventListener("click", function (e) {
 
 
 
-
-
 // Makes search bar drop down on click
 
 $(function () {
@@ -154,18 +141,39 @@ $(function () {
 
 
 
+// Read more functionality on some grid items
 
+$(function () {
+  $(".read-more-wrapper").click(function () {
+    // Check if text is more or less
+    if ($(this).children(".read-more-btn").text() == "Read More") {
+      // Change link text
+      $(this).children(".read-more-btn").text("Read Less");
 
-// Hide navigation menu when the user clicks on inquire link for mobile/tablet screens
+      // Travel up DOM tree to parent, then find any children with CLASS .read-more and slide down
+      $(this).parent().children(".read-more").slideDown();
+      $(this).children(".down-icon").css("transform", "rotate(-180deg)");
+    } else {
+      // Change link text
+      $(this).children(".read-more-btn").text("Read More");
 
-document.getElementById("enquire-link").addEventListener("click", function (e) {
-
+      // Travel up DOM tree to parent , then find any children with CLASS .read-more and slide up
+      $(this).parent().children(".read-more").slideUp();
+      $(this).children(".down-icon").css("transform", "rotate(0deg)");
+    }
+  });
 });
 
 
 
+// Hide navigation menu when the user clicks on inquire link for mobile/tablet screens
+
+document
+  .getElementById("enquire-link")
+  .addEventListener("click", function (e) {});
 
 
+  
 // hide table container when user clicks on close icon
 
 document.querySelector(".close-icon").addEventListener("click", function (e) {
