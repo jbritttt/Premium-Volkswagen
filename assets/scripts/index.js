@@ -167,8 +167,7 @@ $(function () {
   if ($(window).width() < 1115) {
     $("#enquire-link").click(function () {
       // Check if text is more or less
-      let nav = document.querySelector("nav");
-      nav.style.left = "-20rem";
+      openMenu()
 
     
     });
