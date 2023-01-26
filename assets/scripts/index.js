@@ -1,3 +1,6 @@
+
+
+
 // applies styles to header on scroll
 
 window.onscroll = function () {
@@ -12,7 +15,6 @@ window.onscroll = function () {
 
 
 
-
   //if table data is visable then keep the color of black when scrolling up
   else if (
     window.scrollY <= scrollTrigger &&
@@ -23,7 +25,6 @@ window.onscroll = function () {
     header.remove(className);
   }
 };
-
 
 
 
@@ -46,7 +47,6 @@ const observer = new IntersectionObserver(
 cards.forEach((card) => {
   observer.observe(card);
 });
-
 
 
 
@@ -114,21 +114,6 @@ function openMenu() {
 
 
 
-/* prevent default on form and display thankyou message on page
-
-let form = document.querySelector(".form");
-let submitBtn = document.querySelector("#submit");
-let formElement = document.querySelector(".form-container h4");
-
-submitBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  form.style.display = "none";
-  formElement.innerHTML = "Thank You. Your message was successfully sent....";
-});
-
-*/
-
 // Makes search bar drop down on click
 
 $(function () {
@@ -138,6 +123,7 @@ $(function () {
     $(this).next(".dropdown-search").slideToggle();
   });
 });
+
 
 
 // Read more functionality on some grid items
@@ -165,31 +151,19 @@ $(function () {
 
 
 
+// Makes menu items slide down on mobile navigation. * note that if you resize the browsor window from desktop to tablet/mobile screens you will have to refresh the page in order to see it functioning *
+
 $(function () {
-
   if ($(window).width() < 1115) {
+    $(".toggle-mob").click(function () {
+      // Check if text is more or less
 
-  $(".toggle-mob").click(function () {
-    // Check if text is more or less
-    
-      
-  
-      
-      $(this).parent().children('.dropdown-items').slideToggle();
-    
-  
+      $(this).parent().children(".dropdown-items").slideToggle();
+
       // Change link text
-      
-  
-  
-  });
-
-}
-
+    });
+  }
 });
-
-
-
 
 
 
@@ -200,7 +174,7 @@ document
   .addEventListener("click", function (e) {});
 
 
-  
+
 // hide table container when user clicks on close icon
 
 document.querySelector(".close-icon").addEventListener("click", function (e) {
