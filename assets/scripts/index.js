@@ -140,7 +140,6 @@ $(function () {
 });
 
 
-
 // Read more functionality on some grid items
 
 $(function () {
@@ -163,6 +162,34 @@ $(function () {
     }
   });
 });
+
+
+
+$(function () {
+
+  if ($(window).width() < 1115) {
+
+  $(".toggle-mob").click(function () {
+    // Check if text is more or less
+    
+      
+  
+      
+      $(this).parent().children('.dropdown-items').slideToggle();
+    
+  
+      // Change link text
+      
+  
+  
+  });
+
+}
+
+});
+
+
+
 
 
 
