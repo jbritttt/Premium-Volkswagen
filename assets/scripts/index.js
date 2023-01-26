@@ -156,14 +156,32 @@ $(function () {
 $(function () {
   if ($(window).width() < 1115) {
     $(".toggle-mob").click(function () {
-      // Check if text is more or less
-
-      $(this).parent().children(".dropdown-items").slideToggle();
-
-      // Change link text
+     $(this).parent().children(".dropdown-items").slideToggle();
     });
   }
 });
+
+
+// makes mobile nav menu slide back when clicking on enquire link which scrolls to bottom of page
+
+$(function () {
+  if ($(window).width() < 1115) {
+    $("#enquire-link").click(function () {
+      // Check if text is more or less
+      let nav = document.querySelector("nav");
+      nav.style.left = "-20rem";
+
+    
+    });
+  }
+});
+
+
+
+
+
+
+
 
 
 
