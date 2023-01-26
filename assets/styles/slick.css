@@ -50,8 +50,8 @@ and keep them centered when images grow or shrink  */
   border: none;
 
   background-color: transparent;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 
   z-index: 1;
   margin: 0px;
