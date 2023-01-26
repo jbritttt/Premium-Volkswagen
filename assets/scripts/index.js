@@ -166,7 +166,7 @@ $(function () {
 $(function () {
   if ($(window).width() < 1115) {
     $("#enquire-link").click(function () {
-      // Check if text is more or less
+    
       openMenu()
 
     
