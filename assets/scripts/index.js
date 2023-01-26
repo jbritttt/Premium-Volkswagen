@@ -79,7 +79,7 @@ $(function () {
 
 
 
-// move styles to css on friday morning
+// vanilla navigation menu open and close
 
 let openOrClosed = 1;
 
@@ -175,22 +175,6 @@ $(function () {
     });
   }
 });
-
-
-
-
-
-
-
-
-
-
-// Hide navigation menu when the user clicks on inquire link for mobile/tablet screens
-
-document
-  .getElementById("enquire-link")
-  .addEventListener("click", function (e) {});
-
 
 
 // hide table container when user clicks on close icon
