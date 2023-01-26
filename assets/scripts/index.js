@@ -78,7 +78,6 @@ $(function () {
 });
 
 
-
 // vanilla navigation menu open and close
 
 let openOrClosed = 1;
