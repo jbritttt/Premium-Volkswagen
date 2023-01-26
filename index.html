@@ -28,7 +28,10 @@
     <script src="assets/scripts/slick.js" defer></script>
 
     <script src="assets/scripts/index.js" defer></script>
-    <script src="assets/scripts/api.js" type="module" defer></script>
+    <script src="assets/scripts/form.js" defer></script>
+    <script src="assets/scripts/api.js" defer></script>
+
+    
     <meta
       name="description"
       content="Find out more about the new e-Golf, an electric car perfect for urban areas, delivering maximum torque and can accelerate seamlessly. Book a test drive now."
@@ -47,11 +50,14 @@
             <div class="dropdown-search">
               <div class="search-wrapper">
                 <button id="search-btn"><i class="fas fa-search"></i></button>
+                
                 <input
                   type="search"
-                  class="site-search"
+                   class="site-search"
                   placeholder="Search by model . . . . "
+               
                 />
+            
               </div>
               <div class="table-container">
                 <div class="table-wrapper">
@@ -565,15 +571,15 @@
 
       <div class="form-container">
         <a name="form-location" id="L1"></a>
-        <h4 id="display-data"></h4>
-
-        <form class="form">
+        
+        <form class="form" action="">
           <label for="fname">First Name</label>
           <input
             type="text"
             id="fname"
             name="firstname"
             placeholder="Your name.."
+            required
           />
 
           <label for="lname">Last Name</label>
@@ -582,13 +588,16 @@
             id="lname"
             name="lastname"
             placeholder="Your last name.."
+            required
           />
 
           <textarea
             id="subject"
+            type="text"
             name="subject"
             placeholder="Write something.."
             style="height: 200px"
+            required
           ></textarea>
 
           <input type="submit" value="Submit" id="submit" />
@@ -630,14 +639,18 @@
       </p>
     </footer>
 
+
+    
+
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-
+    
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-    <script></script>
+  
+    
   </body>
 </html>

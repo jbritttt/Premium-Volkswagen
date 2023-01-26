@@ -470,6 +470,14 @@ input[type="submit"]:hover {
   margin-top: 1.4rem;
 }
 
+.form-container #message {
+  color:rgb(5, 155, 5);
+  width:80%;
+  font-size:14px;
+  text-align:center;
+  margin:auto
+}
+
 @media screen and (min-width: 370px) {
 }
 

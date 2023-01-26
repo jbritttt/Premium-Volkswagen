@@ -114,7 +114,7 @@ function openMenu() {
 
 
 
-// prevent default on form and display thankyou message on page
+/* prevent default on form and display thankyou message on page
 
 let form = document.querySelector(".form");
 let submitBtn = document.querySelector("#submit");
@@ -127,7 +127,7 @@ submitBtn.addEventListener("click", function (e) {
   formElement.innerHTML = "Thank You. Your message was successfully sent....";
 });
 
-
+*/
 
 // Makes search bar drop down on click
 
