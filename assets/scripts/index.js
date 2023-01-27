@@ -121,7 +121,7 @@ $(function () {
 });
 
 $(function () {
-  if ($(window).width() <= 393) {
+  if ($(window).width() < 393) {
     $(".jump-to-form").click(function () {
       $("html,body").animate({ scrollTop: $("#L1").offset().top - 235 }, 1500);
       return false;
