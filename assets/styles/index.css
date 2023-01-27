@@ -211,16 +211,6 @@
 
 /*   intersection observer for elements*/
 
-.icons-container .intersect {
-  transform: translateY(20px);
-  transition: 0.7s ease;
-  opacity: 0;
-}
-.icons-container .show {
-  transform: translateY(0);
-  transition: 0.7s ease;
-  opacity: 1;
-}
 
 .grid-container-1-2 .intersect {
   transform: translateX(20px);
@@ -243,6 +233,19 @@
   transition: 0.7s ease;
   opacity: 1;
 }
+
+.icons-container .intersect {
+  transform: translateY(20px);
+  transition: 0.7s ease;
+  opacity: 0;
+}
+.icons-container .show {
+  transform: translateY(0);
+  transition: 0.7s ease;
+  opacity: 1;
+}
+
+
 
 .register-btn {
   display: flex;

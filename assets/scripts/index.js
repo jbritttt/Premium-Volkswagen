@@ -1,6 +1,7 @@
 
 
 
+
 // applies styles to header on scroll
 
 window.onscroll = function () {
@@ -50,32 +51,8 @@ cards.forEach((card) => {
 
 
 
-//scrolls smoothly to elements on the page at breakpoints
 
-$(function () {
-  if ($(window).width() > 393) {
-    $(".jump-to-form").click(function () {
-      $("html,body").animate({ scrollTop: $("#L1").offset().top - 210 }, 1500);
-      return false;
-    });
-  }
-});
 
-$(function () {
-  if ($(window).width() < 393) {
-    $(".jump-to-form").click(function () {
-      $("html,body").animate({ scrollTop: $("#L1").offset().top - 235 }, 1500);
-      return false;
-    });
-  }
-});
-
-$(function () {
-  $(".jump-to-slider").click(function () {
-    $("html,body").animate({ scrollTop: $("#L2").offset().top - 145 }, 1500);
-    return false;
-  });
-});
 
 
 // vanilla navigation menu open and close
@@ -122,6 +99,37 @@ $(function () {
     $(this).next(".dropdown-search").slideToggle();
   });
 });
+  
+
+//scrolls smoothly to elements on the page at breakpoints
+
+
+$(function () {
+  $(".jump-to-slider").click(function () {
+    $("html,body").animate({ scrollTop: $("#L2").offset().top - 145 }, 1500);
+    return false;
+  });
+});
+
+$(function () {
+  if ($(window).width() > 393) {
+    $(".jump-to-form").click(function () {
+      $("html,body").animate({ scrollTop: $("#L1").offset().top - 210 }, 1500);
+      return false;
+    });
+  }
+});
+
+$(function () {
+  if ($(window).width() <= 393) {
+    $(".jump-to-form").click(function () {
+      $("html,body").animate({ scrollTop: $("#L1").offset().top - 235 }, 1500);
+      return false;
+    });
+  }
+});
+
+
 
 
 

@@ -1,6 +1,6 @@
 
 
-// makes a post request to dummy api 
+// makes a post request to dummy api
 
 $(function(){
 
