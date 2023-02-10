@@ -160,7 +160,7 @@
 
 .grid-container-1-2 p {
   margin-left: 0;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 
 .grid-container-1-2 .grid-items {
@@ -250,7 +250,7 @@
 .register-btn {
   display: flex;
   justify-content: space-between;
-  border: 0.125rem solid black;
+  border: 0.2rem solid rgb(73, 73, 73);
   border-radius: 1.875rem;
 
   width: 160px;
@@ -263,6 +263,8 @@
   text-decoration: none;
   margin-top: 3rem;
 }
+
+
 
 .register-btn .icons-wrapper-3 {
   display: flex;
@@ -293,23 +295,7 @@
   transform: rotate(-45deg);
 }
 
-.car-spec-wrapper {
-  display: flex;
-  justify-content: center;
-}
 
-#car-spec {
-  text-decoration: none;
-  color: black;
-  background-color: rgb(59, 59, 255);
-  font-weight: bold;
-  color: white;
-
-  padding: 1rem;
-  border-radius: 0.5rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
 
 .e-golf-desc {
   display: grid;
@@ -335,7 +321,7 @@
 .e-golf-desc .grid-items p {
   font-size: 1rem;
   font-weight: 600;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 
 .e-golf-desc .grid-items .read-more-wrapper {
@@ -419,7 +405,7 @@
   margin-top: 4rem;
   font-size: 1rem;
   font-weight: 600;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -606,6 +592,14 @@ input[type="submit"]:hover {
     gap: 30px;
     column-gap: 90px;
   }
+
+
+
+  .grid-container-1-2 p, .e-golf-desc .grid-items p, .e-golf-desc .grid-items p{
+
+    line-height:2rem
+  }
+
 
   .icons-container .icon-wrap span {
     margin-right: 1rem;

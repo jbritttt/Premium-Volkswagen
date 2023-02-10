@@ -56,10 +56,11 @@ cards.forEach((card) => {
 
 
 // vanilla navigation menu open and close
-
 let openOrClosed = 1;
 
+
 function openMenu() {
+
   let headerWrapper = document.querySelector(".header-wrapper");
   let nav = document.querySelector("nav");
   let hamburgerBarOne = document.querySelector(".bar-1");
@@ -158,7 +159,7 @@ $(function () {
 
 
 
-// Makes menu items slide down on mobile navigation. * note that if you resize the browsor window from desktop to tablet/mobile screens you will have to refresh the page in order to see it functioning *
+// Makes menu items slide down on mobile navigation. * note that if you resize the browsor window from desktop to tablet/mobile screens you will have to refresh the page in order to see it functioning. This is because the same nav menu is used for both desktop and mobile *
 
 $(function () {
   if ($(window).width() < 1115) {
@@ -181,6 +182,8 @@ $(function () {
     });
   }
 });
+
+
 
 
 // hide table container when user clicks on close icon

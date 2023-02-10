@@ -159,6 +159,16 @@ and keep them centered when images grow or shrink  */
   .slick-slider-1 img {
     width: 50%;
   }
+
+  .slick-slider-1 {
+    margin-top:2rem
+  }
+  .next-1,
+  .prev-1 {
+    padding:9rem;
+    margin:5rem
+  }
+
 }
 
 @media screen and (max-width: 550px) {
